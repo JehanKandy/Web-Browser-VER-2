@@ -22,7 +22,7 @@ from PyQt5.QtWebEngineWidgets import *<br>
 
 #Create a Class for Web Browser for creat the web  browser<br><br>
 class Web_b(QMainWindow):<br>
-    def __init__(self):<br>
+    &nbspdef __init__(self):<br>
         super(Web_b, self).__init__()<br>
         self.browser = QWebEngineView()<br>
         self.browser.setUrl(QUrl('http://www.google.com'))<br>
