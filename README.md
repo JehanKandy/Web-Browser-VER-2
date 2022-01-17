@@ -73,7 +73,7 @@ class Web_b(QMainWindow):<br>
         
        
         
-#____________For RUN the Application_______________     <br>
+#____________For RUN the Application and Python Application_______________     <br>
 app = QApplication(sys.argv)<br>
 #application Name<br>
 QApplication.setApplicationName('Jehan Kandy web VER 2')<br>
