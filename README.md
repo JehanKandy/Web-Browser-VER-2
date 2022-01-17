@@ -34,14 +34,14 @@ class Web_b(QMainWindow):<br>
         self.addToolBar(jk_nav)
         
         #back button<br>
-        jk_back = QAction('Back', self)
-        jk_back.triggered.connect(self.browser.back)
-        jk_nav.addAction(jk_back)
+        jk_back = QAction('Back', self)<br>
+        jk_back.triggered.connect(self.browser.back)<br>
+        jk_nav.addAction(jk_back)<br>
         
         #forward button<br>
-        jk_forward = QAction('Forword', self)
-        jk_forward.triggered.connect(self.browser.forward)
-        jk_nav.addAction(jk_forward)
+        jk_forward = QAction('Forword', self)<br>
+        jk_forward.triggered.connect(self.browser.forward)<br>
+        jk_nav.addAction(jk_forward)<br>
         
         #reload button<br>
         jk_reload = QAction('Reload', self)
