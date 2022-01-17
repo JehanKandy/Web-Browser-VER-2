@@ -13,21 +13,21 @@ you can download code from here (From My GitHub)
 https://www.mediafire.com/file/c46yg54l97ras31/JK_web2.exe/file
 <br><br><br>
 About the Code 
-<br>
-import sys
-from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-from PyQt5.QtWebEngineWidgets import *
+<br><br>
+import sys<br>
+from PyQt5.QtCore import *<br>
+from PyQt5.QtWidgets import *<br>
+from PyQt5.QtWebEngineWidgets import *<br>
 
 
-#Create a Class for Web Browser for creat the web  browser
-class Web_b(QMainWindow):
-    def __init__(self):
-        super(Web_b, self).__init__()
-        self.browser = QWebEngineView()
-        self.browser.setUrl(QUrl('http://www.google.com'))
-        self.setCentralWidget(self.browser)
-        self.showMaximized()
+#Create a Class for Web Browser for creat the web  browser<br><br>
+class Web_b(QMainWindow):<br>
+    def __init__(self):<br>
+        super(Web_b, self).__init__()<br>
+        self.browser = QWebEngineView()<br>
+        self.browser.setUrl(QUrl('http://www.google.com'))<br>
+        self.setCentralWidget(self.browser)<br>
+        self.showMaximized()<br>
         
         #navigetion bar
         jk_nav = QToolBar()
