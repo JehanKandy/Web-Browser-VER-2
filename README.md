@@ -17,18 +17,18 @@ About the Code
 import sys<br>
 from PyQt5.QtCore import *<br>
 from PyQt5.QtWidgets import *<br>
-from PyQt5.QtWebEngineWidgets import *<br>
+from PyQt5.QtWebEngineWidgets import *<br><br>
 
 
 #Create a Class for Web Browser for creat the web  browser<br><br>
 class Web_b(QMainWindow):<br>
-    &nbspdef __init__(self):<br>
+        def __init__(self):<br>
         super(Web_b, self).__init__()<br>
         self.browser = QWebEngineView()<br>
         self.browser.setUrl(QUrl('http://www.google.com'))<br>
         self.setCentralWidget(self.browser)<br>
         self.showMaximized()<br>
-        
+        <br>#__________________________________________<br>
         #navigetion bar
         jk_nav = QToolBar()
         self.addToolBar(jk_nav)
