@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtWebEngineWidgets import *
 
 
+#Create a Class for Web Browser for creat the web  browser
 class Web_b(QMainWindow):
     def __init__(self):
         super(Web_b, self).__init__()
@@ -54,18 +55,12 @@ class Web_b(QMainWindow):
     def jk_update_url(self,j):
         self.jk_url.setText(j.toString())
         
-
-    def navigation(self, url):
-         
-        if not url.startswith("http"):
-            url = "http://" + url
-            self.url_bar.setText(url)
-        self.browser.setUrl(QUrl(url))
+       
         
-        
-        
-        
+#____________For RUN the Application_______________     
 app = QApplication(sys.argv)
+#application Name
 QApplication.setApplicationName('Jehan Kandy web VER 2')
 window = Web_b()
+#run the application
 app.exec_()
