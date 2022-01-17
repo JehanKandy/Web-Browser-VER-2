@@ -29,39 +29,39 @@ class Web_b(QMainWindow):<br>
         self.setCentralWidget(self.browser)<br>
         self.showMaximized()<br>
         <br>#__________________________________________<br>
-        #navigetion bar
+        #navigetion bar<br>
         jk_nav = QToolBar()
         self.addToolBar(jk_nav)
         
-        #back button
+        #back button<br>
         jk_back = QAction('Back', self)
         jk_back.triggered.connect(self.browser.back)
         jk_nav.addAction(jk_back)
         
-        #forward button
+        #forward button<br>
         jk_forward = QAction('Forword', self)
         jk_forward.triggered.connect(self.browser.forward)
         jk_nav.addAction(jk_forward)
         
-        #reload button
+        #reload button<br>
         jk_reload = QAction('Reload', self)
         jk_reload.triggered.connect(self.browser.reload)
         jk_nav.addAction(jk_reload)
         
-        #home button
+        #home button<br>
         jk_home = QAction('Home', self)
         jk_home.triggered.connect(self.jk_go_home)
         jk_nav.addAction(jk_home)
     
-        #url
+        #url<br>
         self.jk_url = QLineEdit()
         self.jk_url.returnPressed.connect(self.jk_nevigate_to)
         jk_nav.addWidget(self.jk_url)
     
-        #update url
+        #update url<br>
         self.browser.urlChanged.connect(self.jk_update_url)
         
-    def jk_go_home(self):
+    def jk_go_home(self):<br>
         self.browser.setUrl(QUrl('http://google.com'))
 
     def jk_nevigate_to(self):
@@ -73,10 +73,10 @@ class Web_b(QMainWindow):<br>
         
        
         
-#____________For RUN the Application_______________     
-app = QApplication(sys.argv)
-#application Name
-QApplication.setApplicationName('Jehan Kandy web VER 2')
-window = Web_b()
-#run the application
-app.exec_()
+#____________For RUN the Application_______________     <br>
+app = QApplication(sys.argv)<br>
+#application Name<br>
+QApplication.setApplicationName('Jehan Kandy web VER 2')<br>
+window = Web_b()<br>
+#run the application<br>
+app.exec_()<br>
